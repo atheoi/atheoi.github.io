@@ -1,0 +1,53 @@
+<style type="text/css">
+h1{
+	size:10px;
+}
+
+nav {
+	float:right;
+}
+nav ul {
+	text-align:center;
+	margin: 0px;
+	padding: 0px;
+}
+nav ul li {
+	float:left;
+	display:inline;
+}
+nav ul li:hover {
+	background:#111111;
+}
+nav ul li a {
+	display:block;
+	padding:15px 25px;
+	color:#444;
+}
+nav ul li ul {
+	position:absolute;
+	width:110px;
+	background:#FFF;
+}
+nav ul li ul li {
+	margin: 0;
+    padding: 0;
+    width: 110px;
+}
+nav ul li ul li a {
+	display:block;
+	padding:15px 10px;
+	color:#424242;
+}
+nav ul li ul li:hover a {
+	background: none repeat scroll 0 0 #f7f7f7;
+}
+
+
+
+
+
+
+
+
+
+

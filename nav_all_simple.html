@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style type="text/css">
+		nav{
+			background: non repeat scroll 0 0 #fff
+			float: left;
+		}
+		nav ul{
+			text-align: center;
+		}
+		nav ul li{
+			display: inline;
+			float: left;
+		}
+		nav ul li: hover{
+			background non repeat scroll 0 0 #e6e6e6;
+		}
+		nav ul li a{
+			display:block; padding: 15px 25px; color:#444;
+		}
+		nav ul li ul{
+		position: absolute; width: 110px; background: #fff
+		}
+		nav ul li ul li{
+		width:110px;
+		}
+		nav ul li ul li a {
+		display: block; 
+		padding: 15px 10px; color: #555
+		}
+		nav ul li ul li: hover a{
+		background:#f6f6f6;
+		}
+		nav ul li ul.fallback{
+		display:none;
+		}
+		nav ul li: hover ul.fallback{
+		display: block;
+		}
+		
+		<script>
+			$function(){
+				$('nav li ul').hide().removeClass('fallback');
+				$('navi li').hover(function(){
+					$('ul'.this).stop().slideToggle(300);
+				});
+			}
+		</script>
+		
+</head>
+<body>
+<div id = "menu">
+	<nav>
+		<ul>
+			<li> 
+				<a href="#">games</a>
+					<ul class="fallback">
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+						<li><a href="#">Link4</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">contact</a>
+					<ul class="fallback">
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+						<li><a href="#">Link4</a></li>
+					</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+</body>

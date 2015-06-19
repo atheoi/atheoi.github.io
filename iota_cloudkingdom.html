@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<head>
+			<meta charset="utf-8">
+			<title>team iota</title>
+			<link rel="stylesheet" href="styles.css">
+			<script src="jquery-1.10.2.js"></script>
+			
+			
+			
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+	   <script>
+	   $(document).ready(function()
+			{
+				$('nav li ul').hide();
+				$('nav li').hover(
+				function(){
+					$('ul', this).stop().slideDown(100);
+				},
+				function(){
+					$('ul',this).stop().slideUp(100);
+				}
+				)
+				//cycleImages();
+				interval = setInterval('cycleImages()', 5000);
+			});
+			</script>
+		</head>
+		<body>
+			<div id="background">
+				<div id="header">
+				<div id="header_contain">
+					<div id="logo">
+						<a href="index.html"><img src="images/teamiota_logo.png" alt="team iota"/></a>
+					</div>
+					<div id="nav_bar">
+						<nav>
+				<ul>
+					<li>
+						<a href="#"><b>games</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_cloudkingdom.html">Cloud Kingdom</a></li>
+								<li><a href="iota_sushimeshi.html">Sushi Meshi</a></li>
+								<li><a href="iota_tomatoproject.html">Tomato Project</a></li>
+								<li><a href="iota_catwheel.html">Cat Wheel</a></li>
+								<li><a href="iota_ponko.html">Ponko</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="#"><b>company</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_about.html">About</a></li>
+								<li><a href="iota_members.html">Members</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="https://www.facebook.com/pages/team-iota/246245522235702"><b>news</b></a>
+					</li>
+					<li>	
+						<a href="#"><b>contact</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_contact.html">General contact</a></li>
+								<li><a href="https://www.facebook.com/pages/team-iota/246245522235702" target="_blank">Facebook</a></li>
+								<li><a href="https://twitter.com/teamiota" target="_blank">Twitter</a></li>
+							</ul>
+					</li>
+					
+					
+				</ul>
+			</nav>
+					</div>
+				</div>
+				</div>
+				<div id="body_content">
+				
+					<div id="wrapper">
+						<img src="images/img_A.jpg"/>
+					</div>
+				
+					<div id="content">
+						<div id="gameinfo">
+						<div class="description">
+						
+							<h1>Cloud Kingdom</h1>
+							<p>Take to the skies in this 3D action adventure card game.</p>
+							<iframe src="http://gfycat.com/ifr/EntireBarrenCanine" frameborder="0" scrolling="no" width="576" height="324"></iframe>
+							<p>Cloud Kingdom is a game where choices mean everything. Choose and build your own unique play style by mixing and matching collectable cards, which grant you the ability to customise your spells and attacks.</p>
+							<p>This is our most ambitious project that has been refined through multiple iterations. The mechanic is a new take on a traditional 3d action game with a strategy card game twist. </p>
+							<p>Screen shots of game currently under development</p>
+							<a href="images/cloud_kingdom_ss1_l.jpg" target="_blank"><img src="images/cloud_kingdom_ss1.jpg"></a>
+							<a href="images/cloud_kingdom_ss2_l.jpg" target="_blank"><img src="images/cloud_kingdom_ss2.jpg"></a>
+							<a href="images/cloud_kingdom_ss3_l.jpg" target="_blank"><img src="images/cloud_kingdom_ss3.jpg"></a>
+							<p>Concept artwork behind Cloud Kingdom.</p>
+							<a href="images/cloud_kingdom_ss4_l.jpg" target="_blank"><img src="images/cloud_kingdom_ss4.jpg"></a>
+							<a href="images/cloud_kingdom_ss5_l.jpg" target="_blank"><img src="images/cloud_kingdom_ss5.jpg"></a>
+							
+						</div>
+						<div class="info">
+							<p>Game info</p>
+							<div class="info_left">
+								<img src="images/icon_cloudkingdom.jpg"/>
+							</div>
+							<div class="info_right">
+								<p id="highlight">Release date:</p> <p id="info">In development</p>
+								<br>
+								<p id="highlight">Genre:</p> <p id="info">3rd-person action</p>
+								<br>
+								<p id="highlight">Platform:</p> <p id="info">PC</p>
+							</div>
+						</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div id="footer">
+					<h6>&copy; 2015 team iota</h6>
+				</div>
+			</div>
+		</body>
+	</header>
+</html>

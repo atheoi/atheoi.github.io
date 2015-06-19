@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<head>
+			<meta charset="utf-8">
+			<title>team iota</title>
+			<link rel="stylesheet" href="styles.css">
+			<script src="jquery-1.10.2.js"></script>
+			
+			
+			
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+	   
+		
+		
+		<script>
+					var interval;
+					var $active= $('.img_scroll .active');
+					var $next;
+					var $fadingFunc;
+					var $tactive= $('.ticker .active');
+					var $tnext;
+					
+				function cycleImages(){
+					$active = $('.img_scroll .active');
+					$next = ($active.next().length > 0) ? $active.next() : $('.img_scroll a:first');
+					$next.css('z-index',2);//move the next image up the pile
+					$fadingFunc = $active.fadeOut(500,function(){//fade out the top image
+									$active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+									$next.css('z-index',3).addClass('active');//make the next image the top one
+					
+					$tactive = $('.ticker .active');
+					$tnext = ($tactive.next().length > 0) ? $tactive.next() : $('.ticker a:first');
+					//$tactive.css("background-color, #ef7934");
+					
+					$tactive.show().removeClass('active');
+					$tnext.addClass('active');
+					});
+				}
+				
+				function tickerclick(id, t){
+					clearInterval(interval);
+					clearInterval($fadingFunc);
+					
+					$active = $('.img_scroll .active');
+			
+					
+					$next = $(id);
+					if($next.attr('class') == 'active')//if the clicked obj is already the active object, do nothin
+						return;
+					
+					$next.css('z-index',2);
+
+					$fadingFunc = $active.fadeOut(300,function(){//fade out the top image
+									$active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+									$next.css('z-index',3).addClass('active');//make the next image the top one
+									
+									
+					$tactive = $('.ticker .active');		
+					$tnext = $(t);
+					$tactive.show().removeClass('active');
+					$tnext.addClass('active');				
+					
+					$("timage").attr("src","images/img_scrollselect_B.png");
+					
+					});
+					
+				
+				}		
+				
+				
+				
+			$(document).ready(function()
+			{
+				$('nav li ul').hide();
+				$('nav li').hover(
+				function(){
+					$('ul', this).stop().slideDown(100);
+				},
+				function(){
+					$('ul',this).stop().slideUp(100);
+				}
+				)
+				//cycleImages();
+				interval = setInterval('cycleImages()', 5000);
+			});
+			
+		
+		</script>
+		</head>
+		
+		<body>
+			<div id="background">
+			
+				<div id="header">
+				<div id="header_contain">
+					<div id="logo">
+						<a href="index.html"><img src="images/teamiota_logo.png" alt="team iota"/></a>
+					</div>
+					<div id="nav_bar">
+						<nav>
+				<ul>
+					<li>
+						<a href="#"><b>games</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_cloudkingdom.html">Cloud Kingdom</a></li>
+								<li><a href="iota_sushimeshi.html">Sushi Meshi</a></li>
+								<li><a href="iota_tomatoproject.html">Tomato Project</a></li>
+								<li><a href="iota_catwheel.html">Cat Wheel</a></li>
+								<li><a href="iota_ponko.html">Ponko</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="#"><b>company</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_about.html">About</a></li>
+								<li><a href="iota_members.html">Members</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="https://www.facebook.com/pages/team-iota/246245522235702"><b>news</b></a>
+					</li>
+					<li>	
+						<a href="#"><b>contact</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_contact.html">General contact</a></li>
+								<li><a href="https://www.facebook.com/pages/team-iota/246245522235702" target="_blank">Facebook</a></li>
+								<li><a href="https://twitter.com/teamiota" target="_blank">Twitter</a></li>
+							</ul>
+					</li>
+					
+					
+				</ul>
+			</nav>
+					</div>
+				</div>
+				</div>
+				
+				<div id="body_content">
+					<div id="wrapper">
+						<div class="ticker">
+								<a id="1" class="active" href="#" onClick="tickerclick('#A', '#1'); return false"><img id = "timage" src="images/img_scrollselect.png" alt="team iota"/></a>
+								<a id="2"class="" href="#" onClick="tickerclick('#B', '#2'); return false"><img id = "timage" src="images/img_scrollselect.png" alt="team iota"/></a>
+								<a id="3"class="" href="#" onClick="tickerclick('#C', '#3'); return false"><img id = "timage" src="images/img_scrollselect.png" alt="team iota"/></a>
+								<a id="4"class="" href="#" onClick="tickerclick('#D', '#4'); return false"><img id = "timage" src="images/img_scrollselect.png" alt="team iota"/></a>
+								<a id="5"class="" href="#" onClick="tickerclick('#E', '#5'); return false"><img id = "timage" src="images/img_scrollselect.png" alt="team iota"/></a>
+						</div>
+						<div id ="currentId" class="img_scroll">
+								<a id="A"class = "active" href="iota_cloudkingdom.html" style="z-index: 3; display: block;"><img  src="images/img_A.jpg"/></a>
+								<a id="B" class = ""         href="iota_sushimeshi.html" style="z-index: 1; display: block;"><img src="images/img_B.jpg"/></a>
+								<a id="C" class = ""         href="iota_tomatoproject.html" style="z-index: 1; display: block;"><img src="images/img_C.jpg"/></a>
+								<a id="D" class = ""         href="iota_catwheel.html" style="z-index: 1; display: block;"><img src="images/img_D.jpg"/></a>
+								<a id="E" class = ""         href="iota_ponko.html" style="z-index: 1; display: block;"><img src="images/img_E.jpg"/></a>
+						</div>
+					</div>
+
+					<div id="content">
+						<div id="media">
+						<a href="https://www.facebook.com/pages/team-iota/246245522235702" target="_blank"><img src="images/img_content.png"/></a>
+						</div>
+					<div id="container">
+						<div class="home_cell"><img src="images/amigo.png"/>
+							<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/AmigoHuang" data-widget-id="496476930963546112">Tweets by @AmigoHuang</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+						<div class="home_cell"><img src="images/jason.png"/>
+							<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/shoudokukun"  data-widget-id="496477075440537600">Tweets by @shoudokukun</a>     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+						<div class="home_cell_2"><img src="images/pascal.png"/>
+							<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/paxiti" data-widget-id="496229523164106752">Tweets by @paxiti</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+						</div>
+					</div>
+				
+				</div>
+					
+				</div>
+				<div id="footer">
+					<h6>&copy; 2015 team iota</h6>
+				</div>
+			</div>
+		</body>
+	</header>
+</html>

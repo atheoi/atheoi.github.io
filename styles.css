@@ -1,0 +1,296 @@
+p{
+	font-family:arial;
+	color:#bbbbbb;
+}
+
+h1{
+	font-family:arial;
+	color:#bbbbbb;
+}
+
+h2{
+	font-family:arial;
+	color:#bbbbbb;
+}
+
+h3{
+	font-family:arial;
+	color:#ef7934;
+
+}
+
+h4{
+	font-family:arial;
+	color:#bbbbbb;
+	font-style:italic;
+}
+
+h5{
+	font-family:arial;
+	color:#bbbbbb;
+	
+}
+
+h6{
+	font-family:arial;
+	color:#bbbbbb;
+}
+
+body{
+	background-color:#1b1b1b;
+}
+
+a:link {
+    text-decoration: none;
+	color:#d9580d;
+}
+
+a.link:visited{
+	color:#d9580d;
+}
+
+a.link:hover{
+	color:#ef7934;
+}
+
+a:hover{
+	color:#ef7934;
+}
+
+#highlight{
+	display:inline;
+	color:#ef7934;
+	font-family:arial;
+}
+
+#info{
+	display:inline;
+}
+
+nav {
+font-family:arial;
+	float:right;
+	
+}
+nav ul {
+	text-align:left;
+	margin: 0px;
+	padding: 0px;
+}
+nav ul li {
+	float:left;
+	display:inline;
+}
+nav ul li:hover {
+	background:#1b1b1b;
+}
+nav ul li a {
+	display:block;
+	padding:15px 25px;
+	color:#8f8f8f;
+}
+nav ul li ul {
+	position:absolute;
+	width:150px;
+	background:#1b1b1b;
+}
+nav ul li ul li {
+	margin: 0;
+    padding: 0;
+    width: 150px;
+}
+nav ul li ul li a {
+	display:block;
+	padding:15px 10px;
+	color:#bbbbbb;
+}
+nav ul li ul li:hover a {
+	background: none repeat scroll 0 0 #0a0a0a;
+}
+
+#background{
+	width:1200px;
+	height:800px;
+
+	margin:auto;
+}
+
+#header{
+	width:1200px;
+	height:50px;
+	margin:auto;
+	padding-bottom:10px;
+	box-shadow:3px 0px 15px #1b1b1b;
+	position:relative; z-index:2;
+}
+
+#header_contain{
+	width:900px;
+	margin:auto;
+}
+
+#logo{
+	width:220px;
+	height:50px;
+	opacity:0.8;
+}
+
+#logo:hover{
+	opacity:1;
+	/*filter:blur(2px);
+	-webkit-filter: blur(1px);
+			-moz-filter: blur(1px);
+			-o-filter: blur(1px);
+			-ms-filter: blur(1px);*/
+}
+
+#nav_bar{
+	height:50px;
+	float:right;
+	margin-top:-50px;
+	position:relative; z-index:1;
+}
+
+#body_content{
+	width:1200px;
+	/*height:900px;*/
+	margin:auto;
+}
+
+#media{
+	height:180px;
+	box-shadow:2px 1px 15px #0f0f0f;
+	
+}
+
+#media:hover{
+	opacity:0.8;
+}
+
+#wrapper{
+	width:1200px;
+	height:500px;
+	overflow:hidden;
+	position:relative; z-index:0;
+	margin:auto;
+	
+}
+
+.ticker{
+float: right;
+	position:absolute; z-index:4;
+	margin-top:475px;
+	margin-left:950px;
+	height: 15px;
+	overflow: hidden;
+	
+}
+
+.ticker a.active{
+
+	background: url('images/img_scrollselect_B.png');
+	z-index:5;
+
+}
+
+
+.img_scroll{
+    width:1200px;
+
+}
+
+
+.img_scroll:hover{
+	
+	/*filter:blur(1px);
+	-webkit-filter: blur(1px);
+			-moz-filter: blur(1px);
+			-o-filter: blur(1px);
+			-ms-filter: blur(1px);*/
+}
+
+
+
+.contentbox{
+    width:1200px;
+    
+    float:left;
+    
+	opacity: 1;
+   	transition: opacity .15s ease-in-out;
+   	-moz-transition: opacity .15s ease-in-out;
+   	-webkit-transition: opacity .15s ease-in-out;
+	padding-bottom:10px;
+}
+/*
+.contentbox:hover{
+	opacity:0.9;
+}
+*/
+#content{
+	padding-top:25px;
+	width:900px;
+	margin:auto;
+}
+
+#container{
+	height:400px;
+}
+
+#gameinfo{
+	height:400px;
+}
+
+.description{
+	width:580px;
+	float:left;
+	padding-right:20px;
+}
+
+.info{
+	width:300px;
+	float:left;
+}
+
+.info_left{
+	width:150px;
+	float:left;
+}
+
+.info_right{
+	width:150px;
+	float:left;
+}
+
+.home_cell{
+	width:294px;
+	float:left;
+	margin-right:9px;
+	overflow:hidden;
+	padding-top:25px;
+}
+
+.home_cell_2{
+	width:294px;
+	float:left;
+	
+	overflow:hidden;
+	padding-top:25px;
+}
+
+#footer{
+	width:900px;
+	height:35px;
+	margin:auto;
+	margin-top:75px;
+	clear:both;
+}
+
+.img_scroll a{
+	position:absolute;
+	z-index:1;
+}
+
+.img_scroll a.active{
+	z-index:3;
+}

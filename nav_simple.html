@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="nav_simple.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+	   
+		
+		<script>
+			$(document).ready(function()
+			{
+				$('nav li ul').hide();
+				$('nav li').hover(
+				function(){
+					$('ul', this).stop().slideDown(100);
+				},
+				function(){
+					$('ul',this).stop().slideUp(100);
+				}
+				)
+			});
+		
+		</script>
+		<title>jquery menu</title>
+		
+</head>
+<body>
+	<div class = "wrapper">
+		<div id = "main">
+			<nav>
+				<ul>
+					<li>
+						<a href="#">game</a>
+							<ul class ="fallback">
+								<li><a href="#">cloud</a></li>
+								<li><a href="#">ponko</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="#">about</a>
+					</li>
+								
+							
+					
+				</ul>
+			</nav>
+		
+		</div>
+	</div>	
+
+	
+	
+</body>

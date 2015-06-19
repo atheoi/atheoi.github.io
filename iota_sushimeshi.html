@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<head>
+			<meta charset="utf-8">
+			<title>team iota</title>
+			<link rel="stylesheet" href="styles.css">
+			<script src="jquery-1.10.2.js"></script>
+			
+			
+			
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+	   <script>
+	   $(document).ready(function()
+			{
+				$('nav li ul').hide();
+				$('nav li').hover(
+				function(){
+					$('ul', this).stop().slideDown(100);
+				},
+				function(){
+					$('ul',this).stop().slideUp(100);
+				}
+				)
+				//cycleImages();
+				interval = setInterval('cycleImages()', 5000);
+			});
+			</script>
+		</head>
+		<body>
+			<div id="background">
+				<div id="header">
+				<div id="header_contain">
+					<div id="logo">
+						<a href="index.html"><img src="images/teamiota_logo.png" alt="team iota"/></a>
+					</div>
+					<div id="nav_bar">
+						<nav>
+				<ul>
+					<li>
+						<a href="#"><b>games</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_cloudkingdom.html">Cloud Kingdom</a></li>
+								<li><a href="iota_sushimeshi.html">Sushi Meshi</a></li>
+								<li><a href="iota_tomatoproject.html">Tomato Project</a></li>
+								<li><a href="iota_catwheel.html">Cat Wheel</a></li>
+								<li><a href="iota_ponko.html">Ponko</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="#"><b>company</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_about.html">About</a></li>
+								<li><a href="iota_members.html">Members</a></li>
+							</ul>
+					</li>
+					<li>	
+						<a href="https://www.facebook.com/pages/team-iota/246245522235702"><b>news</b></a>
+					</li>
+					<li>	
+						<a href="#"><b>contact</b></a>
+							<ul class ="fallback">
+								<li><a href="iota_contact.html">General contact</a></li>
+								<li><a href="https://www.facebook.com/pages/team-iota/246245522235702" target="_blank">Facebook</a></li>
+								<li><a href="https://twitter.com/teamiota" target="_blank">Twitter</a></li>
+							</ul>
+					</li>
+					
+					
+				</ul>
+			</nav>
+					</div>
+				</div>
+				</div>
+				<div id="body_content">
+				
+					<div id="wrapper">
+						<img src="images/img_B.jpg"/>
+					</div>
+				
+					<div id="content">
+						<div id="gameinfo">
+						<div class="description">
+						
+							<h1>Sushi Meshi</h1>
+							<p>This simple game about collecting food and making sushi will get you hooked! (hah, get it, hooked...)</p>
+							<p>Sashi the sushi chef had just opened her new shop, which she always dreamed of. Use the hooks grab the raw material for points and also gain multiple hooks to grab more. </p>
+							<img src="images/sushi_ss1.jpg">
+							<p> Customers will pop in once in a while and complete their request by hooking the necessary materials and gain extra pints and extra reputation </p>
+							<img src="images/sushi_ss2.jpg">
+							<p> Satisfy the customer, keep Sashi and her shop rolling! </p>
+							<img src="images/sushi_ss3.jpg">
+						
+							
+						</div>
+						<div class="info">
+							<p>Game info</p>
+							<div class="info_left">
+								<img src="images/icon_sushimeshi.jpg"/>
+							</div>
+							<div class="info_right">
+								<p id="highlight">Release date:</p> <p id="info">Development hell</p>
+								<br>
+								<p id="highlight">Genre:</p> <p id="info">High-score collection</p>
+								<br>
+								<p id="highlight">Platform:</p> <p id="info">Android/iOS</p>
+							</div>
+						</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div id="footer">
+					<h6>&copy; 2015 team iota</h6>
+				</div>
+			</div>
+		</body>
+	</header>
+</html>
